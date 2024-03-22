@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/llScrollContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/person" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/black_outline"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter your name"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Bio"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/black_outline"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter your bio"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btnUpdateProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_background"
+                    android:padding="8dp"
+                    android:text="Upload Profile Picture"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Skills"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Android Development"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Java"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Kotlin"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_background"
+                    android:padding="8dp"
+                    android:text="Save Profile"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/black_outline"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter your name"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Bio"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/black_outline"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter your bio"
+                    android:padding="8dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_background"
+                    android:padding="8dp"
+                    android:text="Upload Profile Picture"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Skills"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Android Development"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Java"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Kotlin"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_background"
+                    android:padding="8dp"
+                    android:text="Save Profile"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/black_outline"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter your name"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Bio"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/black_outline"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter your bio"
+                    android:padding="8dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_background"
+                    android:padding="8dp"
+                    android:text="Upload Profile Picture"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="Skills"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Android Development"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Java"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Kotlin"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_background"
+                    android:padding="8dp"
+                    android:text="Save Profile"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvTopHeaderCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-85dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="10dp"
+            app:strokeWidth="0dp">
+
+            <RelativeLayout
+                android:id="@+id/rlForHeaderView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clLoginView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:elevation="10dp"
+                    android:paddingHorizontal="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/person"
+                        android:visibility="invisible"
+                        app:civ_border_color="@color/gray444"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <TextView
+                        android:id="@+id/greetingTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Good morning, Guest"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toTopOf="@id/loginRegisterTextView"
+                        app:layout_constraintStart_toEndOf="@id/imageView"
+                        app:layout_constraintTop_toTopOf="@id/imageView"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <TextView
+                        android:id="@+id/loginRegisterTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="3dp"
+                        android:text="LOGIN / REGISTER"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView"
+                        app:layout_constraintStart_toEndOf="@id/imageView"
+                        app:layout_constraintTop_toBottomOf="@id/greetingTextView" />
+
+                    <ImageView
+                        android:id="@+id/searchIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_search"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView"
+                        app:layout_constraintEnd_toStartOf="@id/notificationIcon"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintTop_toTopOf="@id/imageView" />
+
+                    <ImageView
+                        android:id="@+id/notificationIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_notification"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView"
+                        app:layout_constraintEnd_toStartOf="@id/dotIcon"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintTop_toTopOf="@id/imageView" />
+
+                    <ImageView
+                        android:id="@+id/dotIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_menu"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@id/imageView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintTop_toTopOf="@id/imageView" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/cvExploreView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tvExplore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/explore_back"
+                        android:drawableStart="@drawable/ic_explore"
+                        android:drawablePadding="5dp"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="13dp"
+                        android:text="Explore"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/game" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/popcorn" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/discount" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/unmute" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/podcast" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</layout>

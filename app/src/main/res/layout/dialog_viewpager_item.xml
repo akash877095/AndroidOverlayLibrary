@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/ivBannerImg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_280sdp"
+        android:layout_marginHorizontal="@dimen/_14sdp"
+        android:elevation="@dimen/_15sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dialog_banner_img"
+        android:visibility="visible" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvPopupView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="-90dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardElevation="@dimen/_10sdp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:text="Selamat! Kamu Dapat Ekstra Kuota 1GB/3 hari"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/red_back"
+                android:text="Claim Now"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnViewAllPromo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/gray_back"
+                android:text="View All Promo"
+                android:textAllCaps="false"
+                android:textColor="@color/blackshade"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

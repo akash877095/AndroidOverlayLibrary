@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btWebviewFonts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_background"
+                android:text="Welcome"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnViewPagerAnim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_background"
+                android:text="Personalize Your Experience"
+                android:textAllCaps="false"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btWebviewFonts" />
+
+            <Button
+                android:id="@+id/btnHeaderAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/button_background"
+                android:paddingHorizontal="@dimen/_30sdp"
+                android:text="Discover New Content"
+                app:layout_constraintBottom_toBottomOf="@+id/btWebviewFonts"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btWebviewFonts" />
+
+            <Button
+                android:id="@+id/btVerticalViewPager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_background"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:text="Stay Informed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnViewPagerAnim" />
+
+            <Button
+                android:id="@+id/btViewPagerDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Connect"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="@+id/btnViewPagerAnim"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btVerticalViewPager"
+                app:layout_constraintTop_toTopOf="@+id/btnViewPagerAnim" />
+
+            <Button
+                android:id="@+id/btnCalenderView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/button_background"
+                android:paddingHorizontal="@dimen/_30sdp"
+                android:text="Get Help and Support"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/btVerticalViewPager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btVerticalViewPager" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</layout>

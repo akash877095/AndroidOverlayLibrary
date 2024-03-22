@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:background="@drawable/gray_outline_back"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_10sdp"
+    android:paddingVertical="@dimen/_8sdp">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:orientation="vertical"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:id="@+id/secondViewPagerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:elevation="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:id="@+id/indicatorLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerSecond"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.9"
+            android:orientation="vertical"
+            android:overScrollMode="never" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
